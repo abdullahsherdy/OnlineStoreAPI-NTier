@@ -1,17 +1,15 @@
-
-```markdown
 # Online Store API (NTier Architecture)
 
 ## Overview
 
-This is a **.NET Core Web API** for an online store system developed with **NTier architecture**, using the **Repository Pattern** for data access, **DTOs** for data transfer, and **Services** for business logic. The API includes functionality for managing products, customers, and orders, and is secured with **JWT Authentication**. 
+This is a **.NET Core Web API** for an online store system developed with **NTier architecture**, using the **Repository Pattern** for data access, **DTOs** for data transfer, and **Services** for business logic. The API includes functionality for managing products, customers, and orders, and is secured with **JWT Authentication**.
 
 The system supports:
 - **CRUD operations** for Products, Customers, and Orders.
 - **JWT Authentication** for login and registration.
 - **Error handling** and validation at various levels.
 - **Repository pattern** to separate concerns.
-  
+
 ### Key Features
 
 - **NTier Architecture**: Separation of concerns into API, BLL (Business Logic Layer), and DAL (Data Access Layer) for scalability and maintainability.
@@ -20,17 +18,6 @@ The system supports:
 - **DTOs**: Data Transfer Objects for smooth communication between layers.
 - **Error Handling**: Detailed error messages and exception handling.
 - **Custom Responses**: Tailored responses for API endpoints like `GetOrderById` and `GetAllProducts`.
-
----
-
-## Table of Contents
-
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [How to Use](#how-to-use)
-- [API Endpoints](#api-endpoints)
-- [Future Enhancements](#future-enhancements)
 
 ---
 
@@ -53,19 +40,6 @@ The project is divided into the following layers:
 - **BLL (Business Logic Layer)**: Contains the services and business logic for the application.
 - **DAL (Data Access Layer)**: Implements the repository pattern for data access.
 - **Common**: Holds shared resources like DTOs.
-
-```
-/OnlineStoreAPI
-  /Controllers
-  /Services
-  /Repositories
-  /DTOs
-  /Models
-  /Migrations
-  Program.cs
-  appsettings.json
-  ...
-```
 
 ---
 
@@ -131,7 +105,7 @@ The project is divided into the following layers:
 ### Customers
 - `GET /api/customers`: Get all customers.
 - `GET /api/customers/{id}`: Get a customer by ID.
-- `GET /api/customers/{Nae}`: Get a customer by Name.
+- `GET /api/customers/{Name}`: Get a customer by Name.
 - `POST /api/customers`: Create a new customer.
 - `PUT /api/customers/{id}`: Update a customer.
 - `DELETE /api/customers/{id}`: Delete a customer.
@@ -142,6 +116,7 @@ The project is divided into the following layers:
 - `POST /api/orders`: Create a new order.
 - `DELETE /api/orders`: Delete an Order.
 - `PUT /api/orders`: Update an Order.
+
 ---
 
 ## Future Enhancements
@@ -150,18 +125,12 @@ The project is divided into the following layers:
 - Implement **Caching** for performance improvements.
 - Expand functionality for **Order Management**, such as filtering by status.
 - Add **Role-based Access Control** (RBAC) for different user roles (e.g., admin, customer).
-  
+
 ---
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ```
 
-### Steps to Customize:
-- Replace the `git clone` URL with your repository link.
-- Update the **Project Structure** section with your actual folder structure if it differs.
-- Update the **Technologies Used** if you're using additional packages or tools.
-- Tailor the **API Endpoints** section based on your current endpoints and features.
-```
+This markdown is now properly formatted and ready to be used on GitHub or any markdown-supported platform.
